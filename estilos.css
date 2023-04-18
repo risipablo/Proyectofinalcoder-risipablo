@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+*{ 
+    box-sizing: border-box; 
+    padding: 0px;
+    margin:0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    scroll-behavior:smooth;
+    background-color: rgb(170, 232, 251); 
+}
+
+.contenedor-header{
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    top:0;
+    width: 100%;
+}
+
+    .contenedor-header header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+ul{ 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor-header header .icon{
+    background-color: rgb(158, 76, 235);
+    display: none;
+    
+    justify-content: space-between;
+}
+
+.contenedor-header header .icon2 i{
+    color: #fff;
+    padding: 6px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.contenedor-header header .icon i:hover{
+    cursor: pointer;
+    transition: .6s;
+    color: red;
+}
+
+.contenedor-header header  span a{
+    font-family: 'Montserrat', sans-serif;;
+    color: #fff;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.contenedor-logo .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-logo img{
+    height: 60px;
+    width: 90px;
+    
+}
+
+
+
+/*BUSCADOR*/
+
+.contenedor-header .buscar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(241, 243, 243);
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border-radius: 40px;
+    padding: 0px 8px;
+    border: #474747 solid 1px;
+    
+}
+
+.contenedor-header .buscar_texto{ 
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(134, 133, 133);
+    font-size: 16px;
+    float: left;
+    line-height: 40px;
+    margin: 4px 30px ;
+}
+
+.contenedor-header .boton{
+    text-decoration: none;
+    float: right;
+    padding: 6px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Navegador */
+
+nav{
+    display: none;
+}
+
+
+.hamburguesa {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburguesa span {
+    display: block;
+    left: 100%;
+    height: 2px;
+    width: 25px;
+    margin-bottom: 5px;
+    background: #333;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 18px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .7s;
+    width: 100%;
+}
+
+nav a:hover {
+        color:rgb(228, 43, 43)
+}
+
+
+/* carousel section */
+
+.contenedor-carousel{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba( 30,35,38,.8), rgb(177, 177, 177)),
+    url(./Imagenes/sliderss.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e7e417;
+    cursor: pointer;
+}
+
+.contenedor-carousel h1{
+    font-family: 'Tilt Prism', cursive;
+    padding-top: 90px ;
+    font-size: 2em;
+}
+
+/* Banners de la pagina */
+
+.baners .contenido-novedades{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.baners .contenido-novedades h1{
+    text-align: center;
+    justify-content: center;
+    color:rgb(112, 21, 197);
+    font-size: 40px;
+    padding: 20px 30px;
+    margin: 90px 0px 0px 0px;
+}
+
+.baners .contenido-novedades .carta h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.2em;
+    padding-bottom: 100px;
+    color: antiquewhite;
+    text-shadow: 2px 2px black;
+}
+
+.baners .carta{
+    height: 390px;
+    background-size: cover;
+    background-position: center center ;
+    padding: 90px;
+    margin: 20px;
+    border-radius: 18px;
+    box-shadow: 1px 1px 4px rgb(0,0,0,3);
+    cursor: pointer;
+}
+
+
+
+
+.carta:first-child{
+    
+    background-image: url("Imagenes/Indumentaria.jpg");
+    background-repeat: no-repeat;
+    
+    }
+    
+    
+    .carta:nth-child(2){ 
+        background-image: url("Imagenes/moises.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    .carta:nth-child(3){
+        background-image: url("Imagenes/juguetegato.jpg");
+        background-repeat: no-repeat;
+    }
+
+    /*Botones*/
+
+    .baners button { 
+        justify-content: center;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 2px solid rgb(32, 32, 32,0.5);
+        box-shadow: 2px 2x 10px rgb(32, 32, 32,0.5);
+        color:  rgb(255, 254, 254);
+        font-style: italic;
+        background-color: rgb(61, 200, 235);
+    }
+    
+    .baners button:hover{
+        cursor: pointer;
+        transition: .8s;
+        background-color: rgb(241, 31, 24);
+    }
+    
+
+/* Conectados */
+
+.sociales .container{
+    background-color: rgb(158, 76, 235);
+    margin-top: 12%;
+    margin-bottom: 10%;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container .skill .fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sociales h1{
+    color: #fff;
+    font-size: 1.7em;
+    padding: 20px;
+}
+
+.sociales .container .skill .fila i{
+    padding: 30px;
+    color: #fff;
+    font-size: 4rem; 
+} 
+
+.sociales .container .skill .fila i:hover{
+    transition: .8s;
+}
+
+.sociales .container .skill .fila .instagram i:hover{
+    color:#e9471f;
+}
+
+.sociales .container .skill .fila .facebook i:hover{
+    color: #080bb1;
+}
+
+.sociales .container .skill .fila .whatsapp i:hover{
+    color: #2fec32;
+}
+
+/*Articulos*/
+
+.articulos .container{
+    background-image: url(./Imagenes/moises2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 100% ;
+}
+
+
+.articulos h1{
+    color:rgb(112, 21, 197);
+    text-align: center;
+    font-size: 2.3em;
+    margin: 50px 0px 20px 0px;
+    padding: 20px;
+
+}
+
+.articulos .container h3{
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 2.2em;
+    padding: 80px;
+}
+
+.articulos p{
+    text-align: center;
+    color: #b007e3;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.articulos #finger{
+    display: none;
+}
+
+/* seccion envios */
+
+.envios .container{
+    background-color: rgb(158, 76, 235);
+    margin-top: 18%;
+    margin-bottom:10%;
+}
+
+
+.envios .container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.envios .container .fila{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.envios .container .fila  i{
+    color: #fff;
+    font-size: 4.6rem;
+    padding: 10px 10px;
+} 
+
+.envios .container .fila p{
+    font-weight:lighter;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+/*footer*/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(237, 240, 243);
+}
+
+.grupo-2{
+    padding: 12px 6px;
+    
+}
+
+/*pie de pagina (footer)*/
+
+footer a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: rgb(134, 31, 230); 
+    font-size: 12px;
+    padding: 0px 6px;
+}
+
+.pie-pagina .grupo-1{
+    color: rgb(134, 31, 230); 
+}
+
+.pie-pagina h2{
+    display:flex;
+    padding: 0px 6px;
+    font-size: 1.3rem;
+    font-weight: 700px;
+    margin: 22px 0px 18px 0px;
+
+}
+
+.pie-pagina .grupo-1 li{
+    margin-bottom: 8px;
+    padding: 0px 6px;
+}
+
+.pie-pagina .grupo-1 .contacto a{
+    color: rgb(127, 9, 238);
+}
+
+
+
+.pie-pagina .grupo-1 a:hover{
+    transition: .6s;
+    color:rgb(250, 26, 26);
+    cursor: pointer;
+}
+
+
+.pie-pagina .grupo-1 .red-social i{
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 20px 0px;
+    line-height: 10px;
+    font-size: 2.1em;
+    text-align: center;
+    border: 30px;
+}
+
+.pie-pagina .grupo-1 .red-social .btn-insta i:hover{
+    transition: .7s;
+    color:#ee622b;
+}
+
+.pie-pagina .grupo-1 .red-social .btn-face i:hover{
+    transition: .7s;
+    color: #080bb1;
+}
+
+/* Derechos reservados */
+
+.grupo-2{
+    background-color: rgb(127, 9, 238);
+    color: #ebe8e8;
+    text-align: center;
+    font-weight: 8px;
+
+}
+
+
+/* whatsapp*/
+
+.btn-wsp{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4df750;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0px 1px 6px rgb(0,0,0,3);
+    z-index: 80;
+}
+
+.btn-wsp:hover{
+text-decoration: none;
+transition: .9s;
+background-color: white;
+color: #1beb1d;
+}
+
+
+/* Seccion Alimentos */
+
+.alimentos{
+    padding-top:  140px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.contenedor-alimentos h1{
+    margin-top:90px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 20px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Seccion Indumentaria */
+
+.indumentaria {
+    padding-top:  140px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.contenedor-indumentaria h1{
+    margin-top:90px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 20px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Seccion Articulos */
+
+.articulo-container{
+    padding-top:  140px;
+    max-width: 1200px;
+}
+
+.articulo-container h1{
+    margin-top:90px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 20px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Seccion Accesorios */
+
+.accesorios{
+padding-top:  140px;
+max-width: 1200px;
+margin: auto;
+
+}
+
+.contenedor-accesorios h1{
+margin-top:90px;
+text-align: center;
+font-size: 40px;
+color: rgb(112, 21, 197);
+padding: 20px ;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* Seccion Contacto */
+
+.contacto .contenido-seccion{
+    max-width: 994px;
+    padding: 150px 0px 80px 0px;
+    margin: auto;
+    
+}
+
+.contacto h2{
+    margin-top:90px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 20px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .col{
+    width:70%;
+    padding: 10px;
+    position:relative;
+
+}
+
+.contacto .texto  p{
+    font-family:'Montserrat', sans-serif; 
+    text-align: center;
+    margin: 10px 0px 30px 0px;
+    color: #000000;
+}
+
+.contacto .col input, .contacto .col textarea{
+    font-family: 'Montserrat', sans-serif;
+    display:block;
+    text-align: center;
+    width: 100%;
+    border:none;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    border-radius: 20px;
+    
+}
+
+.contacto .contenido-seccion .col button{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    background-color: #e94c4c;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: all.3s;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    line-height: 1.25;
+}
+
+.contacto button p{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.contacto button:hover{
+    opacity: 0.7;
+}
+
+
+/* Seccion Ubicacion */ 
+
+
+.ubicacion{
+    padding-top:  140px;
+}
+
+.ubicacion .contenedor-ubicacion{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ubicacion .contenedor-ubicacion h2{
+    margin-top:70px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 40px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ubicacion .fila{
+    display: flex;
+    
+}
+
+.ubicacion .col{
+    width:50%;
+    padding:10px;
+    position: relative;
+}
+
+.ubicacion .fila .info ul li{
+    font-family:'Montserrat', sans-serif;
+    display: block;
+    margin-bottom: 20px;
+    padding: 12px;
+} 
+
+.ubicacion .col iframe{
+    width: 100%;
+}
+
+@media only screen and (min-width:800px){
+
+
+    .contenedor-header .contenedor-logo {
+        display: flex;
+    }
+    .contenedor-logo .logo{
+        margin: 0px 40px 0px 0px;
+    }
+
+    
+    .contenedor-header header .icon{
+        display: flex;
+        width: 102%;
+        flex-direction: row;
+    } 
+    
+    .contenedor-header .buscar{
+        width: 600px;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+    }
+
+    .contenedor-header ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    nav a {
+        flex-wrap: wrap;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 25px 20px;
+        cursor: pointer;
+        transition: .7s;
+    }
+    
+    .contenedor-header header nav ul li a:hover{
+        color:rgb(228, 43, 43)
+    }
+
+    .contenedor-carousel{
+        
+        height: 110vh;
+        background-size: cover;
+    }
+
+    .contenedor-carousel h1{
+        width: 100%;
+        padding-top: 120px;
+        font-size: 2.6em;
+    }
+
+    .baners .contenido-novedades .cartas{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .baners .carta:hover{
+        transition: .6s;
+        height: 450px;
+    }
+
+    .sociales .container .skill .fila i{
+        padding: 40px 9rem;
+        color: #fff;
+        font-size: 7rem;
+    } 
+    
+    .articulos .container {
+        display: flex;
+        justify-content: center;
+        background-image: none;
+        height: none;
+    }
+
+    .articulos .container h3{
+        color: #c10b7e;
+        font-size: 2.6em;
+    }
+
+    .articulos .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+    }
+
+    .articulos .img-container{
+        background-image: url(Imagenes/moises2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        cursor: pointer;
+    }
+
+    .articulos #finger{
+        display: flex;
+        color: #000000;
+        font-size: 6rem;
+        padding: 40px 240px;
+    }
+
+    .articulos #finger:hover{
+        cursor: pointer;
+        transition: .4s;
+        color: #e9471f;
+    }
+
+    .articulos p{
+        font-size: 1.6em;
+    }
+
+    .envios .container .fila{
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .envios .container .fila  i{
+        padding: 10px 90px;
+        margin-bottom: 8px;
+    } 
+    
+    
+    footer{
+        display:flex;
+        flex-direction: column;
+        background-color: rgb(237, 240, 243);
+    }
+
+
+    .pie-pagina .grupo-1 h2{
+        padding-bottom: 8px;
+    }
+
+
+
+    .pie-pagina .grupo-1{
+        grid-template-columns: repeat(3, 10fr); 
+        padding: 30px 0px;
+    }
+
+
+    .pie-pagina .grupo-1 .red-social i{
+        letter-spacing: 8px;
+    }
+
+
+    .grupo-2{
+        text-align:left;
+        padding: 12px 6px;
+    
+    }
+
+
+
+footer a{
+    font-family: 'Montserrat', sans-serif;
+    color: blueviolet;
+    font-size: 14px;
+}
+
+
+.pie-pagina .grupo-1{
+    color: rgb(145, 49, 235);
+    display: grid;
+    grid-template-columns: repeat(3, 8fr); 
+    padding: 10px;
+    margin: 0px 20px;
+    line-height: 10px;
+    
+}
+
+
+.pie-pagina h2{
+    display:flex;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    font-size: 22px;
+    font-weight: 700px;
+    line-height: 30px;
+}
+
+
+
+.pie-pagina .grupo-1 li{
+    margin-bottom: 38px;
+
+}
+
+.pie-pagina .grupo-1 .contacto a{
+    color: rgb(127, 9, 238);
+}
+
+
+
+.pie-pagina .grupo-1 a:hover{
+    transition: .6s;
+    color:rgb(250, 26, 26);
+    cursor: pointer;
+}
+
+
+.pie-pagina .grupo-1 .red-social i{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px 10px 0px;
+    line-height: 10px;
+    font-size: 30px;
+    text-align: center;
+    border: 30px;
+}
+
+.pie-pagina .grupo-1 .red-social .btn-insta i:hover{
+    transition: .7s;
+    color:#ee622b;
+}
+
+.pie-pagina .grupo-1 .red-social .btn-face i:hover{
+    transition: .7s;
+    color: #080bb1;
+}
+
+
+
+.grupo-2{
+    text-align: center;
+    
+}
+
+.ubicacion .col iframe{
+    width: 130%;
+    padding-left: 90px;
+}
+
+}
