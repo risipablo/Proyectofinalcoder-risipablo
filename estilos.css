@@ -189,41 +189,43 @@ nav a:hover {
 
 /* Banners de la pagina */
 
-.baners .contenido-novedades{
+.baners {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    display: flex;
 }
 
 .baners .contenido-novedades h1{
     text-align: center;
     justify-content: center;
     color:rgb(112, 21, 197);
-    font-size: 40px;
+    font-size: 2.6em;
     padding: 20px 30px;
     margin: 90px 0px 0px 0px;
 }
 
-.baners .contenido-novedades .carta h3{
+.baners .carta h3{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.2em;
-    padding-bottom: 100px;
     color: antiquewhite;
     text-shadow: 2px 2px black;
+    height: 170px;
+    justify-content:center ;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .baners .carta{
-    height: 390px;
     background-size: cover;
     background-position: center center ;
+    object-fit: cover;
     padding: 90px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 18px;
     box-shadow: 1px 1px 4px rgb(0,0,0,3);
     cursor: pointer;
 }
-
-
 
 
 .carta:first-child{
@@ -286,7 +288,7 @@ nav a:hover {
 
 .sociales h1{
     color: #fff;
-    font-size: 1.7em;
+    font-size: 2em;
     padding: 20px;
 }
 
@@ -316,7 +318,8 @@ nav a:hover {
 
 .articulos .container{
     background-image: url(./Imagenes/moises2.jpg);
-    background-position: center;
+    display: flex;
+    background-position: center center;
     background-size: cover;
     height: 350px;
     width: 100% ;
@@ -332,19 +335,8 @@ nav a:hover {
 
 }
 
-.articulos .container h3{
-    color: #f7f7f7;
-    text-align: center;
-    font-size: 2.2em;
-    padding: 80px;
-}
-
-.articulos p{
-    text-align: center;
-    color: #b007e3;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    font-weight: 700;
+.articulos .texto{
+    display: none;
 }
 
 .articulos #finger{
@@ -363,7 +355,7 @@ nav a:hover {
 .envios .container h1{
     text-align: center;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 20px;
     padding-bottom: 50px;
 }
@@ -386,7 +378,7 @@ nav a:hover {
     font-size: 1.2rem;
     color: #fff;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 /*footer*/
@@ -537,11 +529,32 @@ color: #1beb1d;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*Seccion Accesorios */
+
+.accesorios{
+    padding-top:  140px;
+    max-width: 1200px;
+    justify-content:center ;
+    margin: auto;
+    
+    }
+    
+    .contenedor-accesorios h1{
+    margin-top:90px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(112, 21, 197);
+    padding: 20px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    
+
 /* Seccion Articulos */
 
 .articulo-container{
-    padding-top:  140px;
-    max-width: 1200px;
+    padding: 190px 0px;
+    margin: auto;
 }
 
 .articulo-container h1{
@@ -553,46 +566,24 @@ color: #1beb1d;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.card {
+.card{
+    justify-content:center ;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    text-align: center;
+}
+
+.card iframe{
+    
     padding: 20px;
-    width: 300px;
+    margin-bottom: 10px;
 }
-
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/*Seccion Accesorios */
-
-.accesorios{
-padding-top:  140px;
-max-width: 1200px;
-margin: auto;
-
-}
-
-.contenedor-accesorios h1{
-margin-top:90px;
-text-align: center;
-font-size: 40px;
-color: rgb(112, 21, 197);
-padding: 20px ;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 
 
 /* Seccion Contacto */
 
 .contacto .contenido-seccion{
-    max-width: 994px;
-    padding: 150px 0px 80px 0px;
+    padding: 190px 0px 80px 0px;
     margin: auto;
     
 }
@@ -669,7 +660,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 .ubicacion{
-    padding-top:  140px;
+    padding: 190px 0px 80px 0px;
 }
 
 .ubicacion .contenedor-ubicacion{
@@ -678,34 +669,34 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .ubicacion .contenedor-ubicacion h2{
-    margin-top:70px;
+    margin-top:80px;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.4rem;
     color: rgb(112, 21, 197);
-    padding: 40px ;
+    padding: 20px ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .ubicacion .fila{
     display: flex;
-    
+    flex-direction: column;
 }
 
 .ubicacion .col{
     width:50%;
-    padding:10px;
+    padding:0px;
     position: relative;
 }
 
 .ubicacion .fila .info ul li{
     font-family:'Montserrat', sans-serif;
     display: block;
-    margin-bottom: 20px;
-    padding: 12px;
+    margin: 20px;
 } 
 
 .ubicacion .col iframe{
-    width: 100%;
+    width: 200%;
+    padding: 8px 8px;
 }
 
 @media only screen and (min-width:800px){
@@ -740,17 +731,17 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     .contenedor-header ul{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     
     nav a {
-        flex-wrap: wrap;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         color: blueviolet;
         font-size: 1rem;
         padding: 8px;
-        margin: 25px 20px;
+        margin: 6px auto;
         cursor: pointer;
         transition: .7s;
     }
@@ -777,13 +768,8 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
         justify-content: center;
     }
 
-    .baners .carta:hover{
-        transition: .6s;
-        height: 450px;
-    }
-
     .sociales .container .skill .fila i{
-        padding: 40px 9rem;
+        padding: 45px 9rem;
         color: #fff;
         font-size: 7rem;
     } 
@@ -795,47 +781,71 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
         height: none;
     }
 
+    
+    .articulos p{
+        display: none;
+        text-align: center;
+        color: #b007e3;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
     .articulos .container h3{
+        display: block;
+        text-align: center;
         color: #c10b7e;
         font-size: 2.6em;
+        padding: 60px;
+    }
+
+    .articulos p{
+        display: block;
+    }
+
+    .articulos p{
+        font-size: 1.3em;
     }
 
     .articulos .texto{
+        display: block;
         width: 50%;
         text-align: initial;
-        padding: 0px 30px;
     }
 
+    .articulos .texto #finger{
+        display: block;
+        text-align: center;
+        font-size: 6em;
+        color: #000000;
+        padding: 80px;
+    }
+
+    .articulos .texto #finger:hover{
+        color: #e9471f;
+        transition: .8s;
+    }
+
+
     .articulos .img-container{
+        display: flex;
         background-image: url(Imagenes/moises2.jpg);
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 500px;
         cursor: pointer;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .articulos .img-container:hover{
+        opacity: 0.6;
     }
 
-    .articulos #finger{
-        display: flex;
-        color: #000000;
-        font-size: 6rem;
-        padding: 40px 240px;
-    }
-
-    .articulos #finger:hover{
-        cursor: pointer;
-        transition: .4s;
-        color: #e9471f;
-    }
-
-    .articulos p{
-        font-size: 1.6em;
-    }
 
     .envios .container .fila{
-        flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
-        justify-content: center;
+        flex-direction: row;
     }
 
     .envios .container .fila  i{
@@ -950,9 +960,27 @@ footer a{
     
 }
 
+
+.articulo-container h1{
+    margin-bottom: 20px;
+}
+
+.card{
+    justify-content: center;
+}
+
+
+.ubicacion .contenedor-ubicacion h2{
+    margin-bottom: 40px;
+}
+
+.ubicacion .fila{
+    flex-direction: row;
+}
+
 .ubicacion .col iframe{
-    width: 130%;
-    padding-left: 90px;
+    width: 120%;
+    padding-left: 60px;
 }
 
 }
