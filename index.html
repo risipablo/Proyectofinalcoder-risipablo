@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Proyecto Final</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
@@ -66,7 +68,7 @@
     </div>   
     
 
-    <div class="contenedor-carousel">
+    <div class="contenedor-carousel" data-aos="fade-down">
         <h1> ¡Te damos la bienvenida a nuestra pagina oficial!</h1>
         <div class="carousel">
         </div>
@@ -74,9 +76,9 @@
 
 
     <Section id="baners" class="baners">
-        <div class="contenido-novedades">
-            <h1>  Destacados </h1>
-                <div class="cartas">
+        <div class="contenido-novedades" data-aos="fade-down">
+            <h2>  Destacados </h2>
+                <div class="cartas" >
                     <div class="carta">
                         <a href="pages/Indumentaria.html" target="_blank">
                         <h3> Indumentaria </h3>
@@ -101,8 +103,8 @@
         </Section>
 
     <Section id="sociales" class="sociales" >
-            <div class="container">
-                <h1> Sigamos Conectados </h1>
+            <div class="container" >
+                <h2> Sigamos Conectados </h2>
                     <div class="skill">
                         <div class="fila">
     
@@ -129,8 +131,8 @@
                 </div>
     </Section>
 
-    <section id="articulos" class="articulos">
-        <h1> Articulos Informativos </h1>
+    <section id="articulos" class="articulos" >
+        <h2> Articulos Informativos </h2>
             <div class="container">
                 <div class="img-container">
                     <a href="./pages/Articulos.html"></a>
@@ -146,10 +148,10 @@
             </div>
     </section>
 
-    <section id="envios" class="envios">
-        <div class="container">
-            <h1> Envios a domicilios </h1>
-            <div class="fila">
+    <section id="envios" class="envios" >
+        <div class="container" >
+            <h2> Envios a domicilios </h2>
+            <div class="fila" >
                 <div class="cell">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p> Escribinos </p>
@@ -226,6 +228,11 @@
             <small>&copy; 2023 BAMBINA Petshop <b> Todos los derechos reservados </b> </small>
         </div>
         </footer>
+        
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>
