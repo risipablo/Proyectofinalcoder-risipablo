@@ -45,19 +45,15 @@ body{
     flex-direction: column;
     padding: 15px;
 
-}
-span a{
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-size: 12px;
-    padding-right: 5px;
-}
+    }
 
     .icon{
     background-color: rgb(158, 76, 235);
     display: none;
     justify-content: space-between;
     }
+
+
 
     .icon i:hover{
         cursor: pointer;
@@ -73,6 +69,14 @@ span a{
         font-size: 12px;
     }
 
+
+    span a{
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    
     .contenedor-logo .logo{
         display: flex;
         justify-content: center;
@@ -314,16 +318,20 @@ nav{
     background-size: cover;
     height: 350px;
     width: 100% ;
-
-    .texto{
-        display: flex;
-    }
-
-    #finger{
-        display: none;
-    }
-    
 }
+
+.articulos p{
+    display: none;
+}
+
+.articulos h3{
+    display: none;
+}
+
+#finger{
+    display: none;
+}
+
 
 h2{
     color:rgb(112, 21, 197);
@@ -592,6 +600,11 @@ color: #1beb1d;
         font-size: 6em;
         color: #000000;
         padding: 80px;
+    }
+
+    .articulos .texto #finger:hover{
+        color: #e9471f;
+        transition: .8s;
     }
 
     .articulos .img-container{

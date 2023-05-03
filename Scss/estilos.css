@@ -37,12 +37,6 @@ body {
   flex-direction: column;
   padding: 15px;
 }
-.contenedor-header span a {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  font-size: 12px;
-  padding-right: 5px;
-}
 .contenedor-header .icon {
   background-color: rgb(158, 76, 235);
   display: none;
@@ -58,6 +52,12 @@ body {
   padding: 6px;
   margin-left: 10px;
   font-size: 12px;
+}
+.contenedor-header span a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  padding-right: 5px;
 }
 .contenedor-header .contenedor-logo .logo {
   display: flex;
@@ -271,10 +271,16 @@ nav a:hover {
   height: 350px;
   width: 100%;
 }
-.articulos .container .texto {
-  display: flex;
+
+.articulos p {
+  display: none;
 }
-.articulos .container #finger {
+
+.articulos h3 {
+  display: none;
+}
+
+#finger {
   display: none;
 }
 
@@ -506,12 +512,10 @@ footer a {
     color: #000000;
     padding: 80px;
   }
-  
-  .articulos .texto #finger:hover{
+  .articulos .texto #finger:hover {
     color: #e9471f;
-    transition: .8s;
-}
-
+    transition: 0.8s;
+  }
   .articulos .img-container {
     display: flex;
     background-image: url(../Imagenes/moises2.jpg);
@@ -522,12 +526,9 @@ footer a {
     cursor: pointer;
     transition: opacity 1s ease-in-out;
   }
-
   .articulos .img-container:hover {
     opacity: 0.6;
   }
-
-  
   .envios .container .fila {
     flex-wrap: wrap;
     text-align: center;
