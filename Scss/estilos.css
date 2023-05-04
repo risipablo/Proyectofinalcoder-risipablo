@@ -15,6 +15,11 @@ ul {
 a {
   text-decoration: none;
 }
+span a{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
 
 body {
   height: 100vh;
@@ -57,7 +62,6 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 12px;
-  padding-right: 5px;
 }
 .contenedor-header .contenedor-logo .logo {
   display: flex;
@@ -472,7 +476,7 @@ footer a {
     justify-content: center;
   }
   .sociales .container .skill .fila i {
-    padding: 45px 9rem;
+    padding: 35px 8rem;
     color: #fff;
     font-size: 7rem;
   }

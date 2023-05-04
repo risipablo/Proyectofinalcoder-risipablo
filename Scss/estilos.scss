@@ -68,13 +68,11 @@ body{
         margin-left: 10px;
         font-size: 12px;
     }
-
-
+    
     span a{
         font-family: 'Montserrat', sans-serif;
         color: #fff;
         font-size: 12px;
-        padding-right: 5px;
     }
     
     .contenedor-logo .logo{
@@ -538,13 +536,15 @@ color: #1beb1d;
         
         height: 110vh;
         background-size: cover;
+
+        h1{
+            width: 100%;
+            padding-top: 120px;
+            font-size: 2.6em;
+        }
     }
 
-    .contenedor-carousel h1{
-        width: 100%;
-        padding-top: 120px;
-        font-size: 2.6em;
-    }
+
 
     .baners .contenido-novedades .cartas{
         display: flex;
@@ -553,7 +553,7 @@ color: #1beb1d;
     }
 
     .sociales .container .skill .fila i{
-        padding: 45px 9rem;
+        padding: 35px 8rem;
         color: #fff;
         font-size: 7rem;
     } 

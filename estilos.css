@@ -44,7 +44,6 @@ a{
 .contenedor-header header .icon{
     background-color: rgb(158, 76, 235);
     display: none;
-    
     justify-content: space-between;
 }
 
@@ -493,7 +492,7 @@ color: #1beb1d;
 /* Seccion Alimentos */
 
 .alimentos{
-    padding-top:  140px;
+    padding-top:  190px;
     max-width: 1200px;
     margin: auto;
 }
@@ -558,7 +557,7 @@ color: #1beb1d;
 /* Seccion Indumentaria */
 
 .indumentaria {
-    padding-top:  140px;
+    padding-top:  190px;
     max-width: 1200px;
     margin: auto;
     
@@ -577,7 +576,7 @@ color: #1beb1d;
 /*Seccion Accesorios */
 
 .accesorios{
-    padding-top:  140px;
+    padding-top:  190px;
     max-width: 1200px;
     justify-content:center ;
     margin: auto;
@@ -794,7 +793,6 @@ color: #1beb1d;
     }
 
     .contenedor-carousel{
-        
         height: 110vh;
         background-size: cover;
     }
