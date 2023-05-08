@@ -1,0 +1,25 @@
+
+/* Seccion Articulos */
+
+h2{
+    @include titulosh2;
+}
+
+
+.articulos{
+    @include contenedor;
+
+
+
+        .card{
+            justify-content:center ;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0px 10px;
+
+            .iframe{
+                padding: 20px;
+            }
+        }
+}

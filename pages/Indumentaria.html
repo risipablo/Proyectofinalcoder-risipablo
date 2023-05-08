@@ -10,7 +10,8 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Proyecto Final</title>
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="../Scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
 
@@ -25,9 +26,9 @@
                     <a href="https://www.facebook.com/Bambina.alimentosyaccesorios" class="#" target="_blank"> 
                         <i class="fa-brands fa-facebook"></i> </a>
                     </div>
-                <div class="index">
-                    <span> <a href="../index.html"> Bambina Petshop </a> </span>
-                </div>
+                    <div class="index">
+                        <a href="../index.html"> <p> Bambina Petshop </p> </a>
+                    </div>
             </div>     
 
             <div class="contenedor-logo">
@@ -68,11 +69,11 @@
             <div class="container-icon">
             </div>
         
-        <div class="contenedor-item">
+        <div class="contenedor-item"  data-aos="fade-down">
             <div class="row">
                 <div class="col-3">
                 <form>
-                    <H3>Indumentaria </H3>
+                    <H3> Ropa </H3>
                     <ul class="tipos">
                         <li>Polares</li>
                         <li>Buzos</li>
@@ -139,7 +140,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Panda </h3>
-                    <p class="descrip"> Talle m-l </p>
+                    <p class="descrip"> Talle M/L/XL </p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -149,7 +150,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Krusty</h3>
-                    <p class="descrip"> Talle m-l-xl </p>
+                    <p class="descrip"> Talle M/L/XL/XXL </p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -159,7 +160,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Harry</h3>
-                    <p class="descrip"> Talle m-l-xl </p>
+                    <p class="descrip"> Talle M/L/XL </p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -169,7 +170,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Bugs Bunny</h3>
-                    <p class="descrip"> Talle m-l-xl</p>
+                    <p class="descrip"> Talle M/L/XL</p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -179,7 +180,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Bugs Bunny</h3>
-                    <p class="descrip"> Talle m-l-xl</p>
+                    <p class="descrip"> Talle M/L/XL</p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -189,7 +190,7 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Goofy</h3>
-                    <p class="descrip"> Talle m-l </p>
+                    <p class="descrip"> Talle M/L/XL </p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -209,17 +210,17 @@
                 </figure>
                 <div class="info-produc">
                     <h3>Buzo Rebel </h3>
-                    <p class="descrip"> Talle l-xl-xxl</p>
+                    <p class="descrip"> Talle M/L/XL</p>
                     <button>Comprar</button>
                 </div>
             </div>
             <div class="item">
                 <figure>
-                    <img src="../Imagenes/Ropa/" alt="moises">
+                    <img src="../Imagenes/Ropa/capitaine.jpg" alt="captaine">
                 </figure>
                 <div class="info-produc">
-                    <h3>Excellent</h3>
-                    <p class="descrip"> Gato </p>
+                    <h3>Buzo Captaine</h3>
+                    <p class="descrip"> Talle M/L/XL</p>
                     <button>Comprar</button>
                 </div>
             </div>
@@ -283,4 +284,8 @@
         </footer>
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="../javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>

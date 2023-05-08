@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alimentos,juguetes,Indumentaria,colchonetas,accesorios para perro y gato">
     <title>Proyecto Final</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
-    <link rel="stylesheet" type="text/css" href="./Scss/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../Scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
 
@@ -27,9 +27,9 @@
                     <a href="https://www.facebook.com/Bambina.alimentosyaccesorios" class="#" target="_blank"> 
                         <i class="fa-brands fa-facebook"></i> </a>
                     </div>
-                <div class="index">
-                    <span> <a href="../Index.html"> Bambina Petshop </a> </span>
-                </div>
+                    <div class="index">
+                        <a href="../index.html"> <p> Bambina Petshop </p> </a>
+                    </div>
             </div>     
 
             <div class="contenedor-logo">
@@ -67,12 +67,12 @@
     
 
 
-    <main class="alimentos" id="alimentos">
+    <main class="alimentos" id="alimentos" >
         <h2>Alimentos</h2>
             <div class="container-icon">
             </div>
         
-        <div class="contenedor-item" >
+        <div class="contenedor-item" data-aos="fade-down" >
             <div class="row">
                 <div class="col-3">
                 <form>
@@ -112,7 +112,8 @@
                 </div>
             </div>
             
-            <div class="item">
+            
+            <div class="item" >
                 <figure >
                     <img src="../Imagenes/Alimentos/excegato.jpg" alt="gatoexcellent">
                 </figure>
@@ -392,4 +393,8 @@
 
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="../javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>

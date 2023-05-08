@@ -1,0 +1,222 @@
+
+
+li,p{
+    font-family: $font-a;
+}
+
+button{
+    background-color: $colorbutton;
+}
+
+h2{
+    @include titulosh2
+}
+
+
+li{
+    font-family: $font-a;
+    padding-left: 10px;
+    margin: 16px 0;
+}
+
+/* Seccion Alimentos */
+
+.alimentos{
+
+    @include contenedor;
+
+    .contenedor-item{
+        @include grid;
+
+        .row {
+            display: none;
+        }
+        
+        .item{
+            @include item;
+
+            img{
+            @include img;
+            }
+
+            figure{
+                overflow: hidden;
+            }
+            
+            .info-produc{
+            @include info;
+            }
+            
+            button{
+            @include botones;
+            }
+        }
+        
+    }
+    
+}
+
+/* Seccion Accesorios */
+
+.accesorios{
+    @include contenedor;
+
+    .contenedor-item{
+        @include grid;
+
+        .row {
+            display: none;
+        }
+
+        .item{
+            @include item;
+
+            img{
+            @include img;
+            }
+
+            figure{
+                overflow: hidden;
+            }
+
+            .info-produc{
+                @include info;
+                }
+
+                button{
+                    @include botones;
+                    }
+        }
+    }
+}
+
+/* Seccion Indumentaria */
+
+.indumentaria{
+    @include contenedor;
+
+    .contenedor-item{
+        @include grid;
+
+        .row {
+            display: none;
+        }
+
+        .item{
+            @include item;
+
+            img{
+            @include img;
+            }
+
+            figure{
+                overflow: hidden;
+            }
+
+            .info-produc{
+                @include info;
+                }
+
+                button{
+                    @include botones;
+                    }
+        }
+    }
+}
+
+/* Version escritorio*/ 
+
+@media only screen and (min-width:800px){
+    .alimentos,
+    .accesorios,
+    .indumentaria{  
+        .contenedor-item{
+        @include grid2;
+
+        .row{
+            @include row;
+
+            h3{
+                display: block;
+                color: $seccionscolor;
+                margin: 20px 6px;
+                letter-spacing: 1px;
+                font-family: $general;
+            }
+            
+            li:hover{
+                transition: .3s;
+                color:rgb(234, 0, 0);
+                cursor: pointer;
+            }
+        
+        }
+
+        .item{
+
+            img{
+                max-width: 100%;
+                object-fit: cover;
+                border-radius: 10px 10px 0 ;
+            }
+
+            figure{
+                overflow: hidden;
+                
+            }
+            
+
+            &:hover{
+                box-shadow: 0px 10px 20px rgba(0,0,0,0.60);
+                transform:scale(1.1);
+                transition: .6s;
+                }
+
+                button:hover{
+                    opacity: 0.7;
+                }                
+            }
+        }
+        
+    }
+
+    .accesorios {  
+        .contenedor-item{
+            .row{
+            grid-row: 1/4;
+            width:80%;
+            height: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:920px){
+    .alimentos,
+    .indumentaria{  
+        .contenedor-item{
+            .row{
+            height: 90%;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:290px){
+
+    .alimentos,
+    .accesorios,
+    .indumentaria{
+        .contenedor-item{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+}
+
+
+
+
+

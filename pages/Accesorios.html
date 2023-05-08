@@ -10,7 +10,8 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Proyecto Final</title>
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="../Scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
 
@@ -26,9 +27,9 @@
                     <a href="https://www.facebook.com/Bambina.alimentosyaccesorios" class="#" target="_blank"> 
                         <i class="fa-brands fa-facebook"></i> </a>
                     </div>
-                <div class="index">
-                    <span> <a href="../index.html"> Bambina Petshop </a> </span>
-                </div>
+                    <div class="index">
+                        <a href="../index.html"> <p> Bambina Petshop </p> </a>
+                    </div>
             </div>     
 
             <div class="contenedor-logo">
@@ -72,7 +73,7 @@
             <div class="container-icon">
             </div>
         
-        <div class="contenedor-item">
+        <div class="contenedor-item" data-aos="fade-down">
             <div class="row">
                 <div class="col-3">
                 <form>
@@ -284,5 +285,9 @@
         </footer>
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="../javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 
 </body>

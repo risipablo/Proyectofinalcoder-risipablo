@@ -10,8 +10,10 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Proyecto Final</title>
-    <link rel="stylesheet" type="text/css" href="../estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="../Scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     
 </head> 
 <body>
@@ -24,9 +26,9 @@
                     <a href="https://www.facebook.com/Bambina.alimentosyaccesorios" class="#" target="_blank"> 
                         <i class="fa-brands fa-facebook"></i> </a>
                     </div>
-                <div class="index">
-                    <span> <a href="../index.html"> Bambina Petshop </a> </span>
-                </div>
+                    <div class="index">
+                        <a href="../index.html"> <p> Bambina Petshop </p> </a>
+                    </div>
             </div>     
 
             <div class="contenedor-logo">
@@ -65,9 +67,9 @@
     </div>   
     
 
-    <div class="articulo-container">
+    <section class="articulos" id="articulos">
         <h2> Articulos Informativos</h2>
-        <div class="card">
+        <div class="card" >
             <iframe width="500" height="370" src="https://www.youtube.com/embed/VsJC_VSBWTo" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
@@ -92,7 +94,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </div>
-    </div>
+    </section>
 
     <footer id="pie-pagina" class="pie-pagina">
         <div class="grupo-1">
@@ -149,7 +151,11 @@
         </div>
         </footer>
 
-
+        
         <script src="https://code.jquery.com/jquery-latest.js"></script>
         <script src="../javascript.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>
