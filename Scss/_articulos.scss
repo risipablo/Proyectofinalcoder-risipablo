@@ -1,16 +1,14 @@
 
 /* Seccion Articulos */
 
-h2{
-    @include titulosh2;
-}
-
 
 .articulos{
     @include contenedor;
 
-
-
+    h2{
+        @include titulosh2;
+    }
+    
         .card{
             justify-content:center ;
             display: flex;
