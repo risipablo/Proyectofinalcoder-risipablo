@@ -19,8 +19,6 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-
     }
 
     .icon{
@@ -53,6 +51,7 @@ p{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 8px;
 
         img{
             height: 60px;
@@ -125,7 +124,7 @@ nav{
     }
 
     li {
-        margin: 18px;
+        margin: 22px;
     }
 
         a{
@@ -143,30 +142,11 @@ nav{
     
 }
 
-.contenedor-carousel{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    background-image: linear-gradient(to top,rgba( 30,35,38,.8), rgb(177, 177, 177)),
-    url(../Imagenes/sliderss.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #e7e417;
-    cursor: pointer;
-
-    h1{
-        @include h1
-    }
-}
 
 /* Version escritorio*/ 
 
 @media only screen and (min-width:800px){
     .contenedor-header {
-    
         .contenedor-logo {
             display: flex;
 
@@ -177,8 +157,7 @@ nav{
 
         .icon{
             display: flex;
-            width: 102%;
-            flex-direction: row;
+            width: 100%;
         } 
 
         .buscar{
@@ -205,19 +184,6 @@ nav{
                 margin: 6px 6px;
                 cursor: pointer;
             }
-        }
-    }
-
-    /*Carousel*/
-    .contenedor-carousel{
-        
-        height: 110vh;
-        background-size: cover;
-
-        h1{
-            width: 100%;
-            padding-top: 120px;
-            font-size: 2.6em;
         }
     }
 

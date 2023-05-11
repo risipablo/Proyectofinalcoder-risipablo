@@ -1,4 +1,27 @@
 
+/* carousel */
+
+.contenedor-carousel{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba( 30,35,38,.8), rgb(177, 177, 177)),
+    url(../Imagenes/sliderss.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0px 0px 30px 0px;
+    
+
+    h1{
+        @include h1;
+        color: #e7e417;
+    }
+}
+
 /* Banners de la pagina */
 
 .baners{
@@ -63,7 +86,7 @@
     background-color: $seccionscolor;
     cursor: pointer;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 12%;
     padding-bottom: 30px;
 
         h2{
@@ -105,15 +128,21 @@
 /* Articulos */
 
 
-.articulos{
+.articulo{
+    margin-top: 12%;
+    h2{
+        @include h_2;
+        margin-bottom: 30px;
+    }
 
     .container{
-        background-image: url(../Imagenes/moises2.jpg);
-        display: flex;
-        background-position: center center;
-        background-size: cover;
-        height: 350px;
-        width: 100% ;
+        .img-container{  background-image: url(../Imagenes/moises2.jpg);
+            display: flex;
+            background-position: center center;
+            background-size: cover;
+            height: 350px;
+            width: 100% ;
+        }
 
             p{
                 display: none;
@@ -125,6 +154,7 @@
     
         #finger{
             display: none;
+            animation-name: finger;
         }
     
         
@@ -133,19 +163,11 @@
 } 
 
 
-.articulos{
-    h2{
-        @include h2;
-        margin-bottom: 30px;
-    }
-}
-
-
 /* seccion envios */
 
 .envios .container{
     background-color:$seccionscolor;
-    margin-top: 20%;
+    margin-top: 12%;
     margin-bottom:10%;
 
     h2{
@@ -178,6 +200,19 @@
 
 @media only screen and (min-width:800px){
 
+    /*Carousel*/
+    .contenedor-carousel{
+        height: 110vh;
+        background-size: cover;
+
+        h1{
+            
+            padding-top: 120px;
+            font-size: 2.6em;
+        }
+    }
+
+
     .baners{
 
         .cartas{ display: flex;
@@ -186,77 +221,85 @@
         }
     }
 
-    .sociales .container .skill .fila{ 
+    .sociales .container {
+        .skill .fila{ 
             i {
             @include iconos2;
             padding: 35px 8rem;
             }
         }
+    }
+    
 
-
-
-    .articulos .container{
-        display: flex;
-        justify-content: center;
-        background-image: none;
-        height: none;
-
-
-
-        p{
-        display: flex;
-        font-family: $font-a;
-        text-align: center;
-        color: $colorderechos;
-        font-size: 1.7rem;
-        letter-spacing: 1px;
-        font-weight: 600;
-        }
-
-        h3{
-            display: block;
-            text-align: center;
-            color: #c10b7e;
-            font-size: 2.6em;
-            padding: 60px;
-        }
-
-        .texto{
+    .articulo
+    {
+        .container{
             display: flex;
-            width: 50%;
-            text-align: initial;
-
-            #finger{
+            justify-content: center;
+            background-image: none;
+            height: none;
+            
+            p{
+            display: flex;
+            font-family: $font-a;
+            text-align: center;
+            color: $colorderechos;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: $color-a;
+            }
+            
+            h3{
                 display: block;
                 text-align: center;
-                font-size: 6em;
-                color: #000000;
-                padding: 80px;
+                color: #c10b7e;
+                font-size: 2.4em;
+                padding: 60px;
             }
+    
+            .texto{
+                display: flex;
+                width: 50%;
+                text-align: initial;
+    
+                #finger{
+                    display: block;
+                    text-align: center;
+                    font-size: 6em;
+                    color: #000000;
+                    padding: 80px;
+    
+                &:hover{
+                        color: $colorinst;
+                        transition: .8s;
+                    }
 
-            #finger:hover{
-                    color: $colorinst;
-                    transition: .8s;
+                    @keyframes finger {
+                        0%{
+                            transform: scale(1.3);
+                        }
+
+                        
+                    }
                 }
-        }
-
-        .img-container{
-            display: flex;
-            background-image: url(../Imagenes/moises2.jpg);
-            background-size: cover;
-            background-position: center center;
-            height: 500px;
-            width: 500px;
-            cursor: pointer;
-            transition: opacity 1s ease-in-out;
-
-            &:hover{
-                opacity: 0.6;
+            }
+    
+            .img-container{
+                display: flex;
+                background-image: url(../Imagenes/moises2.jpg);
+                background-size: cover;
+                background-position: center center;
+                height: 500px;
+                width: 500px;
+                cursor: pointer;
+                transition: 1s;
             }
         }
     }
 
     .envios .container{
+        margin-bottom: 10%;
         .fila{
         flex-wrap: wrap;
         text-align: center;

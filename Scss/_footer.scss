@@ -112,14 +112,13 @@ color:$colorwa;
 
     .pie-pagina .grupo-1{
         display: grid;
-        grid-template-columns: repeat(3, 8fr); 
-        padding: 10px 0px;
-        margin: 0px 20px;
+        grid-template-columns: repeat(3, 9fr); 
+        padding: 10px;
+        margin: 8px 28px;
         line-height: 10px;
 
         h2{
             padding-bottom: 8px;
-            display:flex;
             margin-block-start: 1.33em;
             margin-block-end: 1.33em;
             font-size: 22px;
@@ -129,6 +128,7 @@ color:$colorwa;
         }
 
         li{
+
             margin-bottom: 38px;
         }
 
