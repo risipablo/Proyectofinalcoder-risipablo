@@ -1,12 +1,14 @@
 
 
 .contenedor-error{
+    display: block;
+    background-color: aliceblue;
     align-items: center;
     flex-direction: column;
-    background-color:$colorfooter;
+    height: 100vh;
     width: 100%;
-    
-    .container{
+
+        .container{
         text-align: center;
 
         i{
@@ -58,10 +60,8 @@
 
 @media only screen and (min-width:800px){
     .contenedor-error{
-        height: auto;
 
         .container{
-
             img{
                 height: 300px;
             }
@@ -71,3 +71,22 @@
     
 }
 
+@media only screen and (min-width:950px){
+    .contenedor-error{
+        height: auto;
+
+        .container{
+            img{
+                height: 300px;
+            }
+        }
+        
+    
+    }
+}
+
+@media only screen and (max-width:399px){
+    .contenedor-error{
+        height: auto;
+    }
+}

@@ -185,7 +185,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  display: flex;
+  display: block;
 }
 .baners h2 {
   font-size: 2.5em;
@@ -206,7 +206,7 @@ nav a:hover {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .baners .carta {
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   padding: 90px;
   margin: 30px;
@@ -215,7 +215,7 @@ nav a:hover {
   cursor: pointer;
 }
 .baners .carta:first-child {
-  background-image: url("../Imagenes/Indumentaria.jpg");
+  background-image: url("../Imagenes/art1.jpg");
   background-repeat: no-repeat;
 }
 .baners .carta:nth-child(2) {
@@ -287,7 +287,7 @@ nav a:hover {
   font-size: 2.5em;
   color: rgb(112, 21, 197);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .articulo .container .img-container {
   background-image: url(../Imagenes/moises2.jpg);
@@ -561,7 +561,8 @@ button {
 }
 
 h2 {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 2.6rem;
   color: rgb(112, 21, 197);
@@ -721,6 +722,11 @@ li {
 
 /* Version escritorio*/
 @media only screen and (min-width: 800px) {
+  .alimentos h2,
+  .accesorios h2,
+  .indumentaria h2 {
+    margin-top: 70px;
+  }
   .alimentos .contenedor-item,
   .accesorios .contenedor-item,
   .indumentaria .contenedor-item {
@@ -798,6 +804,12 @@ li {
     height: 90%;
   }
 }
+@media only screen and (max-width: 1150px) {
+  .accesorios .contenedor-item .row {
+    height: 85%;
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 290px) {
   .alimentos .contenedor-item,
   .accesorios .contenedor-item,
@@ -806,7 +818,8 @@ li {
   }
 }
 h2 {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 2.6rem;
   color: rgb(112, 21, 197);
@@ -899,6 +912,9 @@ h2 {
 }
 
 @media only screen and (min-width: 800px) {
+  h2 {
+    margin-top: 70px;
+  }
   .ubicacion .fila {
     flex-direction: row;
   }
@@ -917,7 +933,8 @@ h2 {
   max-width: 1200px;
 }
 .articulos h2 {
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 2.6rem;
   color: rgb(112, 21, 197);
@@ -935,10 +952,17 @@ h2 {
   padding: 20px;
 }
 
+@media only screen and (min-width: 800px) {
+  .articulos h2 {
+    margin-top: 70px;
+  }
+}
 .contenedor-error {
+  display: block;
+  background-color: aliceblue;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(237, 240, 243);
+  height: 100vh;
   width: 100%;
 }
 .contenedor-error .container {
@@ -981,11 +1005,21 @@ h2 {
 }
 
 @media only screen and (min-width: 800px) {
+  .contenedor-error .container img {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 950px) {
   .contenedor-error {
     height: auto;
   }
   .contenedor-error .container img {
     height: 300px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .contenedor-error {
+    height: auto;
   }
 }
 * {

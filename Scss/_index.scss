@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    display: flex;
+    display: block;
 
     h2{
         @include h_2;
@@ -43,7 +43,7 @@
         
     }
     .carta{
-        background-position: center center;
+        background-position: center ;
         background-size: cover;
         padding: 90px;
         margin: 30px;
@@ -54,7 +54,7 @@
 
     .carta:first-child{
     
-        background-image: url("../Imagenes/Indumentaria.jpg");
+        background-image: url("../Imagenes/art1.jpg");
         background-repeat: no-repeat;
         }
         
@@ -132,7 +132,7 @@
     margin-top: 12%;
     h2{
         @include h_2;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .container{
