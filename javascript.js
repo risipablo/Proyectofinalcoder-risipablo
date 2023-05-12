@@ -1,4 +1,6 @@
 
+
+
 $(document).ready(main);
 
 function toggleMenu() {
@@ -8,4 +10,5 @@ function toggleMenu() {
     } else {
         nav.style.display = "block";
     }
-}
+} 
+
