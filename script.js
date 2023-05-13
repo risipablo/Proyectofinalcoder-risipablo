@@ -1,7 +1,4 @@
-
-
-
-$(document).ready(main);
+(document).ready(main);
 
 function toggleMenu() {
     var nav = document.getElementById("nav");
@@ -9,6 +6,7 @@ function toggleMenu() {
         nav.style.display = "none";
     } else {
         nav.style.display = "block";
+    
     }
 } 
 

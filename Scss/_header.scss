@@ -60,6 +60,30 @@ p{
         }
     }
 
+    /* compras */
+
+    .iconmobile{
+        position: fixed;
+        left: 90%;
+        top: 2.7%;
+        font-size: 1.6rem;
+        text-align: center;
+
+        i{
+            color: #191818;
+            
+        }
+    }
+
+    .iconresponsive{
+        display: none;
+    }
+
+    
+    .iconresponsive2{
+        display: none;
+    }
+
     /*Buscador*/
 
     .buscar{
@@ -89,7 +113,7 @@ p{
     .boton{
         text-decoration: none;
         float: right;
-        padding: 6px;
+        padding: 5px;
         font-size: 1.6em;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -98,10 +122,12 @@ p{
 
 /* Navegador */
 
- 
 .hamburguesa{
-    display:inline-block;
+    display: inline-block;
     cursor:pointer;
+    margin: 35px;
+    right: 80%;
+    position: fixed;
 }
 
     span{
@@ -109,20 +135,21 @@ p{
         height: 2px;
         width: 25px;
         margin-bottom: 5px;
-        background: #333;
-
-    
+        background: #000000;
+        
     }
 
     
 nav{
     display:none;
-    
+
+
     ul{
         text-align: center;
         list-style: none;
         margin: 0;
         padding: 0;
+
     }
 
     li {
@@ -150,9 +177,47 @@ nav{
     .contenedor-header {
         .contenedor-logo {
             display: flex;
+            flex-direction: row;
+            
 
             .logo{
                 margin: 0px 40px 0px 0px;
+            }
+
+            .iconresponsive{
+                display: block;
+                position: fixed;
+                left: 84%;
+                margin:40px;
+                text-align: center;
+                
+                i{
+                    font-size: 1.5rem;
+                }
+                p{
+                    display: block;
+                    color: #474747;
+                    font-family: $general;
+    
+                }
+            }
+
+            .iconresponsive2{
+                display: block;
+                position: fixed;
+                left: 90%;
+                margin:40px;
+                text-align: center;
+                
+                i{
+                    font-size: 1.5rem;
+                }
+                p{
+                    display: block;
+                    color: #474747;
+                    font-family: $general;
+    
+                }
             }
         }
 
@@ -160,6 +225,12 @@ nav{
             display: flex;
             width: 100%;
         } 
+
+        .iconmobile{
+            display: none;
+        }
+
+    
 
         .buscar{
             width: 600px;
@@ -188,7 +259,36 @@ nav{
         }
     }
 
-  
 }
 
 
+@media only screen and (max-width:950px){
+    .contenedor-header {
+        .contenedor-logo {
+        .iconresponsive{
+            display: none;
+        }
+        .iconresponsive2{
+            margin-right: 20px;
+        }
+    }
+    }
+}
+
+@media only screen and (max-width:799px) and (min-width:620px ){
+    .contenedor-header{
+        .buscar{
+        width: 550px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:619px) and (min-width:500px){
+    .contenedor-header{
+        .buscar{
+            width: 450px;
+        }
+    }
+
+}

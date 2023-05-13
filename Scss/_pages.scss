@@ -24,6 +24,20 @@ li{
 .alimentos{
 
     @include contenedor;
+    .container-icon{
+        justify-content: center;
+        display: flex;
+        margin: 8px 0px 10px;
+        
+        i{
+            color: rgb(10, 10, 10);
+            padding: 12px;
+            background-color:#ffff;
+            border-radius: 20px;
+            border: #000000 solid 1px;
+            
+        }
+    }
 
     .contenedor-item{
         @include grid;
@@ -60,6 +74,20 @@ li{
 
 .accesorios{
     @include contenedor;
+    .container-icon{
+        justify-content: center;
+        display: flex;
+        margin: 8px 0px 20px;
+        
+        i{
+            color: rgb(10, 10, 10);
+            padding: 12px;
+            background-color:#ffff;
+            border-radius: 20px;
+            border: #000000 solid 1px;
+            
+        }
+    }
 
     .contenedor-item{
         @include grid;
@@ -95,6 +123,20 @@ li{
 .indumentaria{
     @include contenedor;
 
+    .container-icon{
+        justify-content: center;
+        display: flex;
+        margin: 8px 0px 20px;
+        
+        i{
+            color: rgb(10, 10, 10);
+            padding: 12px;
+            background-color:#ffff;
+            border-radius: 20px;
+            border: #000000 solid 1px;
+            
+        }
+    }
     .contenedor-item{
         @include grid;
 
@@ -133,6 +175,11 @@ li{
         h2{
             margin-top: 70px;
         }
+
+        .container-icon{
+            display: none;
+        }
+        
         .contenedor-item{
         @include grid2;
 
@@ -221,7 +268,7 @@ li{
 }
 
 
-@media only screen and (max-width:290px){
+@media only screen and (max-width:330px){
 
     .alimentos,
     .accesorios,
@@ -230,7 +277,12 @@ li{
             grid-template-columns: repeat(1,1fr);
         }
     }
+}
 
+.indumentaria{
+    h2{
+        padding: 0;
+    }
 }
 
 

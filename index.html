@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <meta name="description" content="compra online de indumentaria. Aceptamos devoluciones o cambios de talles">
     <meta name="keyboard" content="indumentaria,perro,gato,polares,precios,buzos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,39 +39,52 @@
             </div>     
 
             <div class="contenedor-logo">
-                
                     <div class="logo">
                         <a href="index.html">
                         <img src="Imagenes/logo.jpg" alt="logo"></a>
                     </div>
-                <div class="buscar">
-                    <input type="text" class="buscar_texto" placeholder="¿Que estas buscando?">
-                        <a href="./pages/Error404.html" class="boton">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="buscar">
+                        <input type="text" class="buscar_texto" placeholder="¿Que estas buscando?">
+                            <a href="./pages/Error404.html" class="boton">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                    </div>
+                    <div class="iconresponsive">
+                        <a href="pages/Error404.html">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Perfil</p>
                         </a>
-                </div>
+                    </div>
+                    <div class="iconresponsive2">
+                        <a href="pages/Error404.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Compras</p>
+                        </a>
+                    </div>
             </div>
 
-
-            <div class="menu-container">
-
-                <div class="hamburguesa" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav id="nav" class="nav">
-                    <ul>
-                        <li> <a href="pages/Alimentos.html">Alimentos</a> </li>
-                        <li> <a href="pages/Indumentaria.html">Indumentaria</a> </li>
-                        <li> <a href="pages/Accesorios.html" onclick="seleccionar()">Accesorios</a> </li>
-                        <li> <a href="pages/Articulos.html"onclick="seleccionar()">Articulos</a> </li>
-                        <li> <a href="pages/Contacto.html"onclick="seleccionar()">Contacto</a> </li>
-                        <li> <a href="pages/Ubicacion.html"onclick="seleccionar()">¿Donde nos encontramos? </a> </li>
-                        </ul>
-                </nav>
+            <div class="iconmobile">
+                <a href="pages/Error404.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
             </div>
 
+            <div class="hamburguesa" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="nav" class="nav">
+                <ul>
+                    <li> <a href="pages/Alimentos.html" onclick="seleccionar()">Alimentos</a> </li>
+                    <li> <a href="pages/Indumentaria.html" onclick="seleccionar()">Indumentaria</a> </li>
+                    <li> <a href="pages/Accesorios.html" onclick="seleccionar()">Accesorios</a> </li>
+                    <li> <a href="pages/Articulos.html"onclick="seleccionar()">Articulos</a> </li>
+                    <li> <a href="pages/Contacto.html"onclick="seleccionar()">Contacto</a> </li>
+                    <li> <a href="pages/Ubicacion.html"onclick="seleccionar()">¿Donde nos encontramos? </a> </li>
+                    </ul>
+            </nav> 
         </header>
     </div>   
     
@@ -143,7 +155,7 @@
     <section id="articulo" class="articulo">
         <h2> Articulos Informativos </h2>
             <div class="container">
-                <a href="./pages/Articulos.html">
+                <a href="./pages/Articulos.html" target="_blank">
                 <div class="img-container"  data-aos="fade-right">
                     
                 </div>
@@ -239,11 +251,12 @@
             <small>&copy; 2023 BAMBINA Petshop <b> Todos los derechos reservados </b> </small>
         </div>
         </footer>
+
         
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
-        <script src="javascript.js"></script>
+        
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
         AOS.init();
         </script>
+        <script src="script.js"> </script>
 </body>

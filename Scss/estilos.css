@@ -18,6 +18,7 @@ p {
   z-index: 99;
   top: 0;
   width: 100%;
+  /* compras */
   /*Buscador*/
 }
 .contenedor-header header {
@@ -56,6 +57,22 @@ p {
   height: 60px;
   width: 90px;
 }
+.contenedor-header .iconmobile {
+  position: fixed;
+  left: 90%;
+  top: 2.7%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.contenedor-header .iconmobile i {
+  color: #191818;
+}
+.contenedor-header .iconresponsive {
+  display: none;
+}
+.contenedor-header .iconresponsive2 {
+  display: none;
+}
 .contenedor-header .buscar {
   display: flex;
   width: 100%;
@@ -80,7 +97,7 @@ p {
 .contenedor-header .boton {
   text-decoration: none;
   float: right;
-  padding: 6px;
+  padding: 5px;
   font-size: 1.6em;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -90,6 +107,9 @@ p {
 .hamburguesa {
   display: inline-block;
   cursor: pointer;
+  margin: 35px;
+  right: 80%;
+  position: fixed;
 }
 
 span {
@@ -97,7 +117,7 @@ span {
   height: 2px;
   width: 25px;
   margin-bottom: 5px;
-  background: #333;
+  background: #000000;
 }
 
 nav {
@@ -123,21 +143,52 @@ nav a {
 nav a:hover {
   color: rgb(228, 43, 43);
 }
-nav .show-menu {
-  transform: translateX(0);
-}
 
 /* Version escritorio*/
 @media only screen and (min-width: 800px) {
   .contenedor-header .contenedor-logo {
     display: flex;
+    flex-direction: row;
   }
   .contenedor-header .contenedor-logo .logo {
     margin: 0px 40px 0px 0px;
   }
+  .contenedor-header .contenedor-logo .iconresponsive {
+    display: block;
+    position: fixed;
+    left: 84%;
+    margin: 40px;
+    text-align: center;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive i {
+    font-size: 1.5rem;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive p {
+    display: block;
+    color: #474747;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive2 {
+    display: block;
+    position: fixed;
+    left: 90%;
+    margin: 40px;
+    text-align: center;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive2 i {
+    font-size: 1.5rem;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive2 p {
+    display: block;
+    color: #474747;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
   .contenedor-header .icon {
     display: flex;
     width: 100%;
+  }
+  .contenedor-header .iconmobile {
+    display: none;
   }
   .contenedor-header .buscar {
     width: 600px;
@@ -159,6 +210,24 @@ nav .show-menu {
     padding: 8px;
     margin: 6px 6px;
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .contenedor-header .contenedor-logo .iconresponsive {
+    display: none;
+  }
+  .contenedor-header .contenedor-logo .iconresponsive2 {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 799px) and (min-width: 620px) {
+  .contenedor-header .buscar {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 619px) and (min-width: 500px) {
+  .contenedor-header .buscar {
+    width: 450px;
   }
 }
 /* carousel */
@@ -586,6 +655,18 @@ li {
   margin: auto;
   max-width: 1200px;
 }
+.alimentos .container-icon {
+  justify-content: center;
+  display: flex;
+  margin: 8px 0px 10px;
+}
+.alimentos .container-icon i {
+  color: rgb(10, 10, 10);
+  padding: 12px;
+  background-color: white;
+  border-radius: 20px;
+  border: #000000 solid 1px;
+}
 .alimentos .contenedor-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -633,6 +714,18 @@ li {
   padding: 190px 0px 80px 0px;
   margin: auto;
   max-width: 1200px;
+}
+.accesorios .container-icon {
+  justify-content: center;
+  display: flex;
+  margin: 8px 0px 20px;
+}
+.accesorios .container-icon i {
+  color: rgb(10, 10, 10);
+  padding: 12px;
+  background-color: white;
+  border-radius: 20px;
+  border: #000000 solid 1px;
 }
 .accesorios .contenedor-item {
   display: grid;
@@ -682,6 +775,18 @@ li {
   margin: auto;
   max-width: 1200px;
 }
+.indumentaria .container-icon {
+  justify-content: center;
+  display: flex;
+  margin: 8px 0px 20px;
+}
+.indumentaria .container-icon i {
+  color: rgb(10, 10, 10);
+  padding: 12px;
+  background-color: white;
+  border-radius: 20px;
+  border: #000000 solid 1px;
+}
 .indumentaria .contenedor-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -730,6 +835,11 @@ li {
   .accesorios h2,
   .indumentaria h2 {
     margin-top: 70px;
+  }
+  .alimentos .container-icon,
+  .accesorios .container-icon,
+  .indumentaria .container-icon {
+    display: none;
   }
   .alimentos .contenedor-item,
   .accesorios .contenedor-item,
@@ -814,13 +924,17 @@ li {
     width: 90%;
   }
 }
-@media only screen and (max-width: 290px) {
+@media only screen and (max-width: 330px) {
   .alimentos .contenedor-item,
   .accesorios .contenedor-item,
   .indumentaria .contenedor-item {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.indumentaria h2 {
+  padding: 0;
+}
+
 h2 {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -966,8 +1080,8 @@ h2 {
   background-color: aliceblue;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
 }
 .contenedor-error .container {
   text-align: center;
@@ -1008,22 +1122,12 @@ h2 {
   color: rgb(209, 12, 12);
 }
 
-@media only screen and (min-width: 800px) {
-  .contenedor-error .container img {
-    height: 300px;
-  }
-}
 @media only screen and (min-width: 950px) {
   .contenedor-error {
     height: auto;
   }
   .contenedor-error .container img {
     height: 300px;
-  }
-}
-@media only screen and (max-width: 399px) {
-  .contenedor-error {
-    height: auto;
   }
 }
 * {
