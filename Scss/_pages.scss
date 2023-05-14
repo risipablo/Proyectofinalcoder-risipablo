@@ -23,15 +23,15 @@ li{
 
 .alimentos{
 
-    @include contenedor;
+    @include contenedor2;
     .container-icon{
         justify-content: center;
         display: flex;
-        margin: 8px 0px 10px;
-        
+
         i{
             color: rgb(10, 10, 10);
             padding: 12px;
+            font-size: 1rem;
             background-color:#ffff;
             border-radius: 20px;
             border: #000000 solid 1px;
@@ -73,11 +73,11 @@ li{
 /* Seccion Accesorios */
 
 .accesorios{
-    @include contenedor;
+    @include contenedor2;
+    
     .container-icon{
         justify-content: center;
         display: flex;
-        margin: 8px 0px 20px;
         
         i{
             color: rgb(10, 10, 10);
@@ -121,12 +121,12 @@ li{
 /* Seccion Indumentaria */
 
 .indumentaria{
-    @include contenedor;
+    @include contenedor2;
 
     .container-icon{
         justify-content: center;
         display: flex;
-        margin: 8px 0px 20px;
+        
         
         i{
             color: rgb(10, 10, 10);
@@ -134,7 +134,6 @@ li{
             background-color:#ffff;
             border-radius: 20px;
             border: #000000 solid 1px;
-            
         }
     }
     .contenedor-item{
@@ -173,8 +172,10 @@ li{
     .accesorios,
     .indumentaria{
         h2{
-            margin-top: 70px;
+            @include titulosh2b
         }
+
+        @include contenedor;
 
         .container-icon{
             display: none;
@@ -241,6 +242,17 @@ li{
     }
 }
 
+@media only screen and (max-width:1123px) and (min-width:800px) {
+    .alimentos,
+    .accesorios,
+    .indumentaria{
+        h2{
+            margin-top: 70px;
+        }
+    }
+}
+
+
 @media only screen and (max-width:920px){
     .alimentos,
     .indumentaria{  
@@ -273,15 +285,17 @@ li{
     .alimentos,
     .accesorios,
     .indumentaria{
+        h2{
+            margin-top: 70px;
+            padding: 0;
+        }
+        .container-icon{
+            justify-content: center;
+            display: flex;
+        }
         .contenedor-item{
             grid-template-columns: repeat(1,1fr);
         }
-    }
-}
-
-.indumentaria{
-    h2{
-        padding: 0;
     }
 }
 
